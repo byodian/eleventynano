@@ -1,0 +1,12 @@
+<header class="sm:flex sm:items-center my-8"> 
+  <h1 class="mb-4 sm:mb-0 font-bold">
+    <a class="no-underline" href="/">{{ navigation.webSiteName }}</a>
+  </h1>
+  <ul class="flex items-center justify-between sm:ml-16 md:gap-x-8 sm:gap-x-4 gap-x-1 list-none pl-0 flex-wrap">
+    {% for menu in navigation.menu %}
+      <li class="pl-0">
+        <a href="{{ menu.url }}">{{ menu.name }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</header>

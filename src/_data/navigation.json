@@ -1,0 +1,9 @@
+{
+  "webSiteName": "Eleventy Starter",
+  "menu": [
+    {
+      "name": "博客",
+      "url": "/blog"
+    }
+  ]
+}

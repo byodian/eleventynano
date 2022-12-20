@@ -1,0 +1,21 @@
+---
+layout: "base"
+---
+
+<main>
+  <div class="pb-5 mb-5 border-b  border-gray-100">
+    <h1 class="text-5xl">{{ title }}</h1>
+    <p class="text-gray-400">
+      <time datetime="{{ created }}">发布于{{ created }}</time>
+
+      {% if updated %}
+        · <time datetime="{{ updated }}">更新于{{ updated }}</time>
+      {% endif %}
+    </p>
+  </div>
+
+  <article class="prose lg:prose-lg">
+    {{ content | safe }}
+  </article>
+
+</main>

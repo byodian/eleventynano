@@ -7,4 +7,3 @@ created: 2022-10-04
 description: Hello World
 ---
 
-# Hello World

@@ -1,4 +1,0 @@
-{
-  "layout": "posts",
-  "permalink" : "posts/{{ mySlug | slugify }}/index.html"
-}

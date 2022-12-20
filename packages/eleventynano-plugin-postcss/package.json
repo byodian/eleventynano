@@ -1,0 +1,15 @@
+{
+  "name": "eleventynano-plugin-postcss",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Hello World\" && exit 0"
+  },
+  "keywords": [
+    "eleventy",
+    "eleventy plugin"
+  ],
+  "author": "byodian",
+  "license": "ISC"
+}

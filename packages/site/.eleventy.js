@@ -1,6 +1,7 @@
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const pluginRSS = require('@11ty/eleventy-plugin-rss');
 const htmlmin = require('html-minifier');
+const postCSSPluin = require('eleventynano-plugin-postcss');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/images');
@@ -11,6 +12,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginRSS);
+  eleventyConfig.addPlugin(postCSSPluin);
 
   // eleventyConfig.addFilter('dateReadable', date => {
   //   return moment(new Date(date)).format('LL');
@@ -94,7 +96,7 @@ module.exports = function (eleventyConfig) {
     htmlTemplateEngine: 'njk',
     markdownTemplateEngine: 'njk',
     dir: {
-      input: 'src',
+      input: '.',
       output: '_site',
       includes: '_includes',
     },

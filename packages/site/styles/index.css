@@ -1,9 +1,9 @@
-@import './tailwind.css';
-@import './variables.css';
-@import './prism-tomorrow.css';
+@import './_tailwind.css';
+@import './_variables.css';
+@import './_prism-tomorrow.css';
 
 h1 {
-  @apply text-4xl tracking-tighter mb-3 lg:text-5xl;
+  @apply text-4xl tracking-tighter mb-3 lg:text-7xl;
 }
 
 h3 {

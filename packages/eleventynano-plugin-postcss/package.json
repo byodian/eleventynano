@@ -8,8 +8,12 @@
   },
   "keywords": [
     "eleventy",
-    "eleventy plugin"
+    "eleventy-plugin"
   ],
   "author": "byodian",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "postcss": "^8.4.14",
+    "postcss-load-config": "^4.0.1"
+  }
 }

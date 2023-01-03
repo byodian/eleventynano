@@ -1,14 +1,12 @@
 {
   "name": "eleventynano-plugin-postcss",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.0.2",
+  "description": "eleventy plugin for postcss configuring",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Hello World\" && exit 0"
-  },
   "keywords": [
     "eleventy",
-    "eleventy-plugin"
+    "eleventy-plugin",
+    "eleventy-plugin-postcss"
   ],
   "author": "byodian",
   "license": "ISC",

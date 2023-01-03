@@ -17,12 +17,21 @@ module.exports = (eleventyConfig, options = {}) => {
 
   eleventyConfig.addExtension(format, {
     outputFileExtension: 'css',
+
     async compile (inputContent, inputPath) {
       return async ({ page }) => {
         const parsed = path.parse(inputPath);
         if (parsed.name.startsWith("_")) return;
+        
+        const ctx = {
+          file: {
+            dirname: path.join(process.cwd(), parsed.dir),
+            basename: parsed.base,
+            extname: parsed.ext
+          }
+        };
 
-        const { plugins, options } = await postcssrc({});
+        const { plugins, options } = await postcssrc(ctx);
         const result = await postcss(plugins)
           .process(inputContent, {
             ...options,

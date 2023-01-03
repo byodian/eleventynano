@@ -12,7 +12,9 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginRSS);
-  eleventyConfig.addPlugin(postCSSPluin);
+  eleventyConfig.addPlugin(postCSSPluin, {
+    format: 'scss'
+  });
 
   // eleventyConfig.addFilter('dateReadable', date => {
   //   return moment(new Date(date)).format('LL');

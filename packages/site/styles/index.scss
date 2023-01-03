@@ -1,0 +1,32 @@
+@import 'variables';
+@import 'mixins';
+@import 'tailwind';
+@import 'prism-tomorrow';
+
+main {
+  width: 100%;
+
+  @include respond('medium') {
+    width: 40em;
+  }
+}
+
+header {
+  @include respond('medium') {
+    height: 10em;
+  }
+}
+
+h1 {
+  @apply text-4xl tracking-tighter mb-3 lg:text-5xl;
+}
+
+h3 {
+  @apply text-2xl font-bold mb-3;
+}
+
+/* Syntax Highlighting*/
+body :not(pre) > code[class*="language-"],
+body pre[class*="language-"] {
+  @apply bg-gray-800;
+}

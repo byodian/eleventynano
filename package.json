@@ -1,6 +1,5 @@
 {
   "scripts": {
-    "test": "pnpm -r run test",
     "build": "pnpm -r run build",
     "start": "pnpm -r run start"
   },
